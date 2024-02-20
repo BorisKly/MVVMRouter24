@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol  AuthViewControllerDelegate: AnyObject {
+    func goToMainView()
+}
+
 class AuthViewController: UIViewController {
     
     var viewModel: AuthViewModelProtocol
@@ -31,6 +35,12 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView?.delegate = self
     }
 }
 
+extension AuthViewController: AuthViewControllerDelegate {
+    func goToMainView() {
+        viewModel.goToMainView()
+    }
+}

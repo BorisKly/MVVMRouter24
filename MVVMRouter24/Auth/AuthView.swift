@@ -8,6 +8,17 @@
 import UIKit
 
 class AuthView: UIView {
+   
+    weak public var delegate: AuthViewControllerDelegate?
+
+    let button: UIButton = {
+        let button = UIButton()
+        button.frame = CGRect(x: 50, y: 100, width: 200, height: 60)
+        button.setTitle("GoToMain", for: .normal)
+        button.backgroundColor = .gray
+        button.addTarget(self, action: #selector(goToMainView), for: .touchUpInside)
+        return button
+    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,6 +31,12 @@ class AuthView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.backgroundColor = .green
+        self.addSubview(button)
+    }
+    
+    @objc func goToMainView() {
+        print(#function)
+        delegate?.goToMainView()
     }
     
 }

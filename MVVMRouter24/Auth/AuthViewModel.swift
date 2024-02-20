@@ -20,6 +20,6 @@ class AuthViewModel: AuthViewModelProtocol {
     }
     
     func goToMainView() {
-        //router.route(to: MainDestination(), animated: true)
+        router.route(to: MainDestination(), animated: true)
     }
 }

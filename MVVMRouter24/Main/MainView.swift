@@ -9,7 +9,19 @@
 import UIKit
 
 class MainView: UIView {
-   
+    
+    
+    weak public var delegate: MainViewControllerDelegate?
+
+    let button: UIButton = {
+        let button = UIButton()
+        button.frame = CGRect(x: 50, y: 100, width: 200, height: 60)
+        button.setTitle("GoToAuth", for: .normal)
+        button.backgroundColor = .gray
+        button.addTarget(self, action: #selector(goToAuthView), for: .touchUpInside)
+        return button
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -21,6 +33,12 @@ class MainView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.backgroundColor = .yellow
+        self.addSubview(button)
+    }
+    
+    @objc func goToAuthView() {
+        print(#function)
+        delegate?.goToAuthView()
     }
     
 }

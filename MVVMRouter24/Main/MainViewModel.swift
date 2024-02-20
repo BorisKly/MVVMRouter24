@@ -6,7 +6,7 @@
 //
 
 protocol  MainViewModelProtocol {
-
+   func goToAuthView()
 }
 
 class MainViewModel: MainViewModelProtocol {
@@ -18,4 +18,9 @@ class MainViewModel: MainViewModelProtocol {
     func showError() {
         router.showError(title: "Error", message: "empty fields are not allowed")
     }
+    
+    func goToAuthView() {
+        router.route(to: AuthDestination(), animated: true)
+    }
+    
 }
