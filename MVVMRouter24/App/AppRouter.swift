@@ -30,11 +30,6 @@ class AppRouter: Router {
         show(viewController: newViewController, animated: animated)
         return newViewController
     }
-    public func routePresent(to destination: Destination, animated: Bool = true) -> UIViewController? {
-        guard let newViewController = destination.destination else { return nil }
-        presentOnly(viewController: newViewController, animated: animated)
-        return newViewController
-    }
 
     public func showError(title: String, message text: String) {
         let alertController = UIAlertController(title: title, message: text, preferredStyle: .actionSheet)
@@ -55,11 +50,6 @@ class AppRouter: Router {
         guard currentViewController != contr else { return }
         self.navigationController.pushViewController(contr, animated: animated)
         self.navigationController.setViewControllers([contr], animated: animated)
-    }
-
-    private func presentOnly(viewController contr: UIViewController, animated: Bool = true) {
-        guard currentViewController != contr else { return }
-        self.navigationController.pushViewController(contr, animated: animated)
     }
 }
 

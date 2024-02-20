@@ -6,13 +6,18 @@
 //
 
 protocol  MainViewModelProtocol {
-   func goToAuthView()
+    func goToAuthView()
+    func networkRequest()
 }
 
 class MainViewModel: MainViewModelProtocol {
+ 
 
     private var router: Router {
         resolve(Router.self)
+    }
+    private var network: NetworkServiceProtocol {
+        resolve(NetworkServiceProtocol.self)
     }
 
     func showError() {
@@ -21,6 +26,12 @@ class MainViewModel: MainViewModelProtocol {
     
     func goToAuthView() {
         router.route(to: AuthDestination(), animated: true)
+        
+    }
+    
+    func networkRequest() {
+        print(#function)
+        network.fetchData()
     }
     
 }

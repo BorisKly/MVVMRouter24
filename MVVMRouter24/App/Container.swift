@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import XServiceLocator
+import Container24
 
-private var container = Container()
+private var container = Container24()
 
 public func resolve<T>(_ item: T.Type) -> T {
     guard let value = try? container.resolve(item) else {

@@ -12,8 +12,6 @@ protocol Router {
 
     @discardableResult
     func route(to: Destination, animated: Bool) -> UIViewController?
-    func routePresent(to: Destination, animated: Bool) -> UIViewController?
-
 
     func showError(title: String, message: String)
 

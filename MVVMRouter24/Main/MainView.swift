@@ -22,6 +22,15 @@ class MainView: UIView {
         return button
     }()
     
+    let networkButton: UIButton = {
+        let button = UIButton()
+        button.frame = CGRect(x: 50, y: 300, width: 200, height: 60)
+        button.setTitle("NetworkRequest", for: .normal)
+        button.backgroundColor = .gray
+        button.addTarget(self, action: #selector(networkRequest), for: .touchUpInside)
+        return button
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -34,11 +43,17 @@ class MainView: UIView {
         super.layoutSubviews()
         self.backgroundColor = .yellow
         self.addSubview(button)
+        self.addSubview(networkButton)
     }
     
     @objc func goToAuthView() {
         print(#function)
         delegate?.goToAuthView()
+    }
+    
+    @objc func networkRequest() {
+        print(#function)
+        delegate?.networkRequest()
     }
     
 }

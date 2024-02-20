@@ -20,13 +20,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         self.window?.windowScene = windowScene
+        
         let appRouter = AppRouter(window: window)
-        
+
         register(appRouter, for: Router.self)
-        
+
         let destination = AuthDestination()
+        
         resolve(Router.self).route(to: destination, animated: true)
-        //registerObjects()
+        registerObjects()
+    }
+    
+    func registerObjects() {
+        let network = NetworkService()
+        register(network, for: NetworkServiceProtocol.self)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -8,6 +8,7 @@ import UIKit
 
 protocol  MainViewControllerDelegate: AnyObject {
     func goToAuthView()
+    func networkRequest()
 }
 
 class MainViewController: UIViewController {
@@ -40,6 +41,10 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: MainViewControllerDelegate {
+    func networkRequest() {
+        viewModel.networkRequest()
+    }
+    
     func goToAuthView() {
         viewModel.goToAuthView()
     }
