@@ -10,9 +10,30 @@
 		E46F5BE42B83C10B00AA5F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BE32B83C10B00AA5F40 /* AppDelegate.swift */; };
 		E46F5BE62B83C10B00AA5F40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BE52B83C10B00AA5F40 /* SceneDelegate.swift */; };
 		E46F5BE82B83C10B00AA5F40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BE72B83C10B00AA5F40 /* ViewController.swift */; };
-		E46F5BEB2B83C10B00AA5F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46F5BE92B83C10B00AA5F40 /* Main.storyboard */; };
 		E46F5BED2B83C10C00AA5F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46F5BEC2B83C10C00AA5F40 /* Assets.xcassets */; };
 		E46F5BF02B83C10C00AA5F40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46F5BEE2B83C10C00AA5F40 /* LaunchScreen.storyboard */; };
+		E46F5BF92B83C12C00AA5F40 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BF82B83C12C00AA5F40 /* Router.swift */; };
+		E46F5BFB2B83C14200AA5F40 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BFA2B83C14200AA5F40 /* Destination.swift */; };
+		E46F5BFD2B83C15200AA5F40 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BFC2B83C15200AA5F40 /* AppRouter.swift */; };
+		E46F5BFF2B83C16400AA5F40 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5BFE2B83C16400AA5F40 /* Container.swift */; };
+		E46F5C022B83C1AB00AA5F40 /* AuthDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C012B83C1AB00AA5F40 /* AuthDestination.swift */; };
+		E46F5C042B83C1BC00AA5F40 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C032B83C1BC00AA5F40 /* AuthView.swift */; };
+		E46F5C062B83C1C700AA5F40 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C052B83C1C700AA5F40 /* AuthViewController.swift */; };
+		E46F5C082B83C1D300AA5F40 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C072B83C1D300AA5F40 /* AuthViewModel.swift */; };
+		E46F5C0B2B83D00100AA5F40 /* XServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = E46F5C0A2B83D00100AA5F40 /* XServiceLocator */; };
+		E46F5C0E2B83D04D00AA5F40 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C0D2B83D04D00AA5F40 /* MainViewModel.swift */; };
+		E46F5C102B83D05500AA5F40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C0F2B83D05500AA5F40 /* MainView.swift */; };
+		E46F5C122B83D06100AA5F40 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C112B83D06100AA5F40 /* MainViewController.swift */; };
+		E46F5C142B83D06B00AA5F40 /* MainDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C132B83D06B00AA5F40 /* MainDestination.swift */; };
+		E46F5C172B83D16900AA5F40 /* MyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C162B83D16900AA5F40 /* MyServiceFactory.swift */; };
+		E46F5C192B83D19D00AA5F40 /* MyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C182B83D19D00AA5F40 /* MyResolver.swift */; };
+		E46F5C1B2B83D1BE00AA5F40 /* MyBasicServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C1A2B83D1BE00AA5F40 /* MyBasicServiceFactory.swift */; };
+		E46F5C1D2B83D1ED00AA5F40 /* AnyServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C1C2B83D1ED00AA5F40 /* AnyServiceFactory.swift */; };
+		E46F5C1F2B83D22700AA5F40 /* Array+MyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C1E2B83D22700AA5F40 /* Array+MyResolver.swift */; };
+		E46F5C212B83D24C00AA5F40 /* MyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C202B83D24C00AA5F40 /* MyContainer.swift */; };
+		E46F5C232B83D27800AA5F40 /* MyContainer+MyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C222B83D27800AA5F40 /* MyContainer+MyResolver.swift */; };
+		E46F5C252B83D29900AA5F40 /* MyContainer+unableToResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C242B83D29900AA5F40 /* MyContainer+unableToResolve.swift */; };
+		E46F5C272B83D2BA00AA5F40 /* Collection+FirstToResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F5C262B83D2BA00AA5F40 /* Collection+FirstToResolve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +41,30 @@
 		E46F5BE32B83C10B00AA5F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46F5BE52B83C10B00AA5F40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E46F5BE72B83C10B00AA5F40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E46F5BEA2B83C10B00AA5F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46F5BEC2B83C10C00AA5F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46F5BEF2B83C10C00AA5F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46F5BF12B83C10C00AA5F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46F5BF82B83C12C00AA5F40 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E46F5BFA2B83C14200AA5F40 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		E46F5BFC2B83C15200AA5F40 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E46F5BFE2B83C16400AA5F40 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		E46F5C012B83C1AB00AA5F40 /* AuthDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDestination.swift; sourceTree = "<group>"; };
+		E46F5C032B83C1BC00AA5F40 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		E46F5C052B83C1C700AA5F40 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		E46F5C072B83C1D300AA5F40 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E46F5C0D2B83D04D00AA5F40 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		E46F5C0F2B83D05500AA5F40 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E46F5C112B83D06100AA5F40 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E46F5C132B83D06B00AA5F40 /* MainDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDestination.swift; sourceTree = "<group>"; };
+		E46F5C162B83D16900AA5F40 /* MyServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyServiceFactory.swift; sourceTree = "<group>"; };
+		E46F5C182B83D19D00AA5F40 /* MyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyResolver.swift; sourceTree = "<group>"; };
+		E46F5C1A2B83D1BE00AA5F40 /* MyBasicServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBasicServiceFactory.swift; sourceTree = "<group>"; };
+		E46F5C1C2B83D1ED00AA5F40 /* AnyServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyServiceFactory.swift; sourceTree = "<group>"; };
+		E46F5C1E2B83D22700AA5F40 /* Array+MyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+MyResolver.swift"; sourceTree = "<group>"; };
+		E46F5C202B83D24C00AA5F40 /* MyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContainer.swift; sourceTree = "<group>"; };
+		E46F5C222B83D27800AA5F40 /* MyContainer+MyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyContainer+MyResolver.swift"; sourceTree = "<group>"; };
+		E46F5C242B83D29900AA5F40 /* MyContainer+unableToResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyContainer+unableToResolve.swift"; sourceTree = "<group>"; };
+		E46F5C262B83D2BA00AA5F40 /* Collection+FirstToResolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+FirstToResolve.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F5C0B2B83D00100AA5F40 /* XServiceLocator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +98,67 @@
 		E46F5BE22B83C10B00AA5F40 /* MVVMRouter24 */ = {
 			isa = PBXGroup;
 			children = (
-				E46F5BE32B83C10B00AA5F40 /* AppDelegate.swift */,
-				E46F5BE52B83C10B00AA5F40 /* SceneDelegate.swift */,
+				E46F5C152B83D14E00AA5F40 /* ServiceLocator */,
+				E46F5C0C2B83D04500AA5F40 /* Main */,
+				E46F5C002B83C1A400AA5F40 /* Auth */,
+				E46F5BF72B83C11400AA5F40 /* App */,
 				E46F5BE72B83C10B00AA5F40 /* ViewController.swift */,
-				E46F5BE92B83C10B00AA5F40 /* Main.storyboard */,
 				E46F5BEC2B83C10C00AA5F40 /* Assets.xcassets */,
 				E46F5BEE2B83C10C00AA5F40 /* LaunchScreen.storyboard */,
 				E46F5BF12B83C10C00AA5F40 /* Info.plist */,
 			);
 			path = MVVMRouter24;
+			sourceTree = "<group>";
+		};
+		E46F5BF72B83C11400AA5F40 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E46F5BE32B83C10B00AA5F40 /* AppDelegate.swift */,
+				E46F5BE52B83C10B00AA5F40 /* SceneDelegate.swift */,
+				E46F5BF82B83C12C00AA5F40 /* Router.swift */,
+				E46F5BFA2B83C14200AA5F40 /* Destination.swift */,
+				E46F5BFC2B83C15200AA5F40 /* AppRouter.swift */,
+				E46F5BFE2B83C16400AA5F40 /* Container.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E46F5C002B83C1A400AA5F40 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E46F5C072B83C1D300AA5F40 /* AuthViewModel.swift */,
+				E46F5C052B83C1C700AA5F40 /* AuthViewController.swift */,
+				E46F5C032B83C1BC00AA5F40 /* AuthView.swift */,
+				E46F5C012B83C1AB00AA5F40 /* AuthDestination.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E46F5C0C2B83D04500AA5F40 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E46F5C0D2B83D04D00AA5F40 /* MainViewModel.swift */,
+				E46F5C112B83D06100AA5F40 /* MainViewController.swift */,
+				E46F5C0F2B83D05500AA5F40 /* MainView.swift */,
+				E46F5C132B83D06B00AA5F40 /* MainDestination.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E46F5C152B83D14E00AA5F40 /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				E46F5C162B83D16900AA5F40 /* MyServiceFactory.swift */,
+				E46F5C182B83D19D00AA5F40 /* MyResolver.swift */,
+				E46F5C1A2B83D1BE00AA5F40 /* MyBasicServiceFactory.swift */,
+				E46F5C1C2B83D1ED00AA5F40 /* AnyServiceFactory.swift */,
+				E46F5C1E2B83D22700AA5F40 /* Array+MyResolver.swift */,
+				E46F5C202B83D24C00AA5F40 /* MyContainer.swift */,
+				E46F5C222B83D27800AA5F40 /* MyContainer+MyResolver.swift */,
+				E46F5C242B83D29900AA5F40 /* MyContainer+unableToResolve.swift */,
+				E46F5C262B83D2BA00AA5F40 /* Collection+FirstToResolve.swift */,
+			);
+			path = ServiceLocator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +177,9 @@
 			dependencies = (
 			);
 			name = MVVMRouter24;
+			packageProductDependencies = (
+				E46F5C0A2B83D00100AA5F40 /* XServiceLocator */,
+			);
 			productName = MVVMRouter24;
 			productReference = E46F5BE02B83C10B00AA5F40 /* MVVMRouter24.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +208,9 @@
 				Base,
 			);
 			mainGroup = E46F5BD72B83C10B00AA5F40;
+			packageReferences = (
+				E46F5C092B83D00100AA5F40 /* XCRemoteSwiftPackageReference "XServiceLocator" */,
+			);
 			productRefGroup = E46F5BE12B83C10B00AA5F40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +227,6 @@
 			files = (
 				E46F5BF02B83C10C00AA5F40 /* LaunchScreen.storyboard in Resources */,
 				E46F5BED2B83C10C00AA5F40 /* Assets.xcassets in Resources */,
-				E46F5BEB2B83C10B00AA5F40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +237,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F5C172B83D16900AA5F40 /* MyServiceFactory.swift in Sources */,
+				E46F5BF92B83C12C00AA5F40 /* Router.swift in Sources */,
+				E46F5C102B83D05500AA5F40 /* MainView.swift in Sources */,
 				E46F5BE82B83C10B00AA5F40 /* ViewController.swift in Sources */,
+				E46F5C272B83D2BA00AA5F40 /* Collection+FirstToResolve.swift in Sources */,
+				E46F5C252B83D29900AA5F40 /* MyContainer+unableToResolve.swift in Sources */,
+				E46F5C062B83C1C700AA5F40 /* AuthViewController.swift in Sources */,
+				E46F5C1B2B83D1BE00AA5F40 /* MyBasicServiceFactory.swift in Sources */,
+				E46F5BFD2B83C15200AA5F40 /* AppRouter.swift in Sources */,
+				E46F5C1F2B83D22700AA5F40 /* Array+MyResolver.swift in Sources */,
+				E46F5BFB2B83C14200AA5F40 /* Destination.swift in Sources */,
+				E46F5C1D2B83D1ED00AA5F40 /* AnyServiceFactory.swift in Sources */,
+				E46F5C022B83C1AB00AA5F40 /* AuthDestination.swift in Sources */,
+				E46F5C122B83D06100AA5F40 /* MainViewController.swift in Sources */,
+				E46F5BFF2B83C16400AA5F40 /* Container.swift in Sources */,
+				E46F5C082B83C1D300AA5F40 /* AuthViewModel.swift in Sources */,
 				E46F5BE42B83C10B00AA5F40 /* AppDelegate.swift in Sources */,
+				E46F5C142B83D06B00AA5F40 /* MainDestination.swift in Sources */,
 				E46F5BE62B83C10B00AA5F40 /* SceneDelegate.swift in Sources */,
+				E46F5C232B83D27800AA5F40 /* MyContainer+MyResolver.swift in Sources */,
+				E46F5C192B83D19D00AA5F40 /* MyResolver.swift in Sources */,
+				E46F5C042B83C1BC00AA5F40 /* AuthView.swift in Sources */,
+				E46F5C0E2B83D04D00AA5F40 /* MainViewModel.swift in Sources */,
+				E46F5C212B83D24C00AA5F40 /* MyContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E46F5BE92B83C10B00AA5F40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E46F5BEA2B83C10B00AA5F40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E46F5BEE2B83C10C00AA5F40 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +408,6 @@
 				INFOPLIST_FILE = MVVMRouter24/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +434,6 @@
 				INFOPLIST_FILE = MVVMRouter24/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +471,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E46F5C092B83D00100AA5F40 /* XCRemoteSwiftPackageReference "XServiceLocator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quickbirdstudios/XServiceLocator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E46F5C0A2B83D00100AA5F40 /* XServiceLocator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E46F5C092B83D00100AA5F40 /* XCRemoteSwiftPackageReference "XServiceLocator" */;
+			productName = XServiceLocator;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E46F5BD82B83C10B00AA5F40 /* Project object */;
 }

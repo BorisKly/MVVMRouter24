@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "xservicelocator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quickbirdstudios/XServiceLocator.git",
+      "state" : {
+        "revision" : "5477ac1e0fb8440f1e34d235c17fb922da98644c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
